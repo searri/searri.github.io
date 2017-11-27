@@ -39,6 +39,10 @@ body {
   color: white;
 }
 
+.six-columns {
+  width: 48%;
+}
+
 .u-MaxHeight {
   height: 100vh;
 }
