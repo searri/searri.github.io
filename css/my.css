@@ -55,3 +55,9 @@ body {
   image-orientation: 0deg;
   background-position: left;
 }
+
+.Nav-link :hover {
+  transition: all 0.3s ease-in-out;
+  color: #1F54CE;
+  cursor: pointer;
+}
