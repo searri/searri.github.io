@@ -6,8 +6,9 @@
 }
 
 a {
-  color: yellow;
+  color: white;
   text-decoration: none;
+  user-select: none;
 }
 
 body {
@@ -29,17 +30,17 @@ body {
 }
 
 .one-third {
-  width: 33.3333334%;
+  width: 40%;
   background-color: #0E3899;
 }
 
 .two-thirds {
-  width: 66.6666667%;
+  width: 60%;
   background-color: #030C20;
   color: white;
 }
 
-.six-columns {
+.six.columns {
   width: 48%;
 }
 
