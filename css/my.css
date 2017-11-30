@@ -127,3 +127,15 @@ body {
   image-orientation: 0deg;
   background-position: left;
 }
+
+.WhiteText {
+  color: white;
+}
+
+.BlackBackground {
+  background-color: black;
+}
+
+.justifyRight {
+  text-align: right;
+}
