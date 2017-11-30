@@ -2,13 +2,15 @@
   padding: 0px;
   margin: 0px;
   font-family: 'Catamaran', sans-serif;
-  color: white;
 }
 
 a {
   color: white;
   text-decoration: none;
   user-select: none;
+}
+a :focus {
+  outline: none;
 }
 
 body {
@@ -42,6 +44,56 @@ body {
 
 .six.columns {
   width: 48%;
+}
+
+.Profile-pane-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: calc(100vh * .10);
+  grid-template-areas: ". . . ." ". . . ." ". . . ." ". i i ." ". i i ." ". n n ." ". d d ." ". . . ." ". . . ." ". . . .";
+}
+
+.Photo-wrapper {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  grid-area: i;
+  align-self: center;
+  justify-self: center;
+}
+
+.My-Face {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 100000px;
+}
+
+.My-Info {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  grid-area: n;
+  align-self: center;
+  justify-self: center;
+}
+
+.Name {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.Description {
+  color: white;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.Nav {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
 }
 
 .u-MaxHeight {
