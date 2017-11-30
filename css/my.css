@@ -46,6 +46,13 @@ body {
   width: 48%;
 }
 
+.Footer {
+  height: 50px;
+  width: 100vw;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .Profile-pane-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -129,11 +136,11 @@ body {
 }
 
 .WhiteText {
-  color: white;
+  color: #ffffff;
 }
 
-.BlackBackground {
-  background-color: black;
+.bg-black {
+  background-color: #000000;
 }
 
 .justifyRight {
