@@ -33,12 +33,12 @@ body {
 
 .one-third {
   width: 40%;
-  background-color: #0E3899;
+  background-color: #1F54CE;
 }
 
 .two-thirds {
   width: 60%;
-  background-color: #030C20;
+  background-color: #0E3899;
   color: white;
 }
 
@@ -51,6 +51,7 @@ body {
   width: 100vw;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: black;
 }
 
 .Profile-pane-wrapper {
@@ -137,10 +138,6 @@ body {
 
 .WhiteText {
   color: #ffffff;
-}
-
-.bg-black {
-  background-color: #000000;
 }
 
 .justifyRight {
