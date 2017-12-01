@@ -165,11 +165,11 @@ body {
 }
 
 .Home {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .Home :hover {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
   color: #0A2665;
   cursor: pointer;
   text-shadow: 0 0 5px white;
@@ -178,6 +178,6 @@ body {
 .Schedule {
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  height: flex;
   padding: 10vh;
 }
