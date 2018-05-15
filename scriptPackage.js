@@ -10,10 +10,11 @@ function changeColors() {
   document.getElementById("third").className = "alt-one-third column u-maxHeight";
   document.getElementById("twoThirds").className = "alt-two-thirds column u-maxHeight u-alt-background";
   var navigation = document.getElementsByClassName("Nav-link");
-  console.log(navigation.length);
+  // console.log(navigation.length);
   var i = 0;
-  while (i < navigation.length) {
+  while (i < 5) {
     document.getElementById("menu").className = "alt-Nav-link";
+    document.getElementById("menu").id = "changed";
     i++;
   }
   // navigation[3].className = "alt-Nav-link";
