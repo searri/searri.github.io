@@ -9,3 +9,8 @@ function funWithConsoles() {
 function changeColors() {
   var a = 5 + 6;
 }
+
+function superScriptFiveMillion() {
+  var input = prompt("Write something", "Anything");
+  document.getElementById("demo").innerHTML = input;
+}
