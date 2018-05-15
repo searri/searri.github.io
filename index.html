@@ -80,7 +80,14 @@
       <div class="container bg-black">
         <div class="columns six DarkText">©2018 Rick Sear, Background by Carl Kleiner</div>
         <div class="columns six DarkText justifyRight">
-          <button onclick="changeColors(true)">Activate Red Mode</button>
+
+          <input type="checkbox" id="id-name--1" name="set-name" class="switch-input" onclick="if(this.checked){changeColors(true)}else{changeColors(false)}">
+          <label for="id-name--1" class="switch-label">
+            Red Mode:
+            <span class="toggle--on">ON</span>
+            <span class="toggle--off">OFF</span>
+          </label>
+
         </div>
       </div>
     </footer>
