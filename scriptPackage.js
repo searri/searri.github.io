@@ -13,7 +13,7 @@ function changeColors() {
   console.log(navigation.length);
   var i = 0;
   while (i < navigation.length) {
-    navigation[i].className = "alt-Nav-link";
+    document.getElementById("menu").className = "alt-Nav-link";
     i++;
   }
   // navigation[3].className = "alt-Nav-link";
