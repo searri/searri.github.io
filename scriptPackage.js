@@ -6,18 +6,26 @@ function funWithConsoles() {
   console.log(8 * 3);
 }
 
-function changeColors() {
-  document.getElementById("third").className = "alt-one-third column u-maxHeight";
-  document.getElementById("twoThirds").className = "alt-two-thirds column u-maxHeight u-alt-background";
-  var navigation = document.getElementsByClassName("Nav-link");
-  // console.log(navigation.length);
-  var i = 0;
-  while (i < 5) {
-    document.getElementById("menu").className = "alt-Nav-link";
-    document.getElementById("menu").id = "changed";
-    i++;
+function changeColors(state) {
+  if (state) {
+    document.getElementById("third").className = "alt-one-third column u-maxHeight";
+    document.getElementById("twoThirds").className = "alt-two-thirds column u-maxHeight u-alt-background";
+    var i = 0;
+    while (i < 5) {
+      document.getElementById("menu").className = "alt-Nav-link";
+      document.getElementById("menu").id = "changed";
+      i++;
+    }
+  } else {
+    document.getElementById("third").className = "one-third column u-maxHeight";
+    document.getElementById("twoThirds").className = "two-thirds column u-maxHeight u-background";
+    var i = 0;
+    while (i < 5) {
+      document.getElementById("changed").className = "Nav-link";
+      document.getElementById("changed").id = "menu";
+      i++;
+    }
   }
-  // navigation[3].className = "alt-Nav-link";
 }
 
 function superScriptFiveMillion() {

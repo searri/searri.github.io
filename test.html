@@ -11,6 +11,8 @@
       gtag('config', 'UA-50391638-10');
     </script>
 
+    <script src="scriptPackage.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick Sear | Personal</title>
@@ -32,7 +34,7 @@
     <div class="container">
       <div class="row">
         <!--LEFT-->
-        <section class="one-third column u-maxHeight">
+        <section class="one-third column u-maxHeight" id = "third">
           <div class="Profile-pane-wrapper">
             <div class="Photo-wrapper">
               <img class="My-Face" src="./images/rick.jpg">
@@ -42,33 +44,33 @@
                 Rick Sear
               </p>
               <p class="Description">
-                Computer Science and Physics<br>George Washington University<br><br>
-              </p>
-              <p class="Home">
-                <a href="index.html">Home</a>
+                Computer Science and Physics<br>George Washington University
+              </p><br><p class="Home">
+                  <a href="https://github.com/searri">Check out my GitHub profile!</a>
               </p>
             </div>
           </div>
         </section>
 
         <!--RIGHT-->
-        <section class="two-thirds column u-maxHeight">
-          <div class="Nav">
-            <div class="Schedule">
-              <h1>What is Rick Sear?</h1><br>
-
-              <div class="columns six DarkText justifyRight">
-                Toggle Red Mode
-                <div class="switch-pad">
-                  <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
-                </div>
-              </div>
-
+        <section class="two-thirds column u-maxHeight u-background" id = "twoThirds">
+          <nav class="Nav">
+            <div class="Nav-link" id = "menu">
+              <a href="resume.pdf" target="_blank">Resume</a>
             </div>
-          </div>
+            <div class="Nav-link" id = "menu">
+              <a href="apsc1001.html">APSC 1001</a>
+            </div>
+            <div class="Nav-link" id = "menu">
+              <a id = "demo" href="MatlabCombined3.pdf" target="_blank">MATLAB Exercises</a>
+            </div>
+            <div class="Nav-link" id = "menu">
+              <a href="schedule.html">Class Schedule</a>
+            </div>
+            <div class="Nav-link" id = "menu">
+              <a href="personal.html">Personal Information</a>
+            </div>
+          </nav>
         </section>
 
       </div>
@@ -78,6 +80,16 @@
     <footer class="Footer">
       <div class="container bg-black">
         <div class="columns six DarkText">©2018 Rick Sear</div>
+        <div class="columns six DarkText justifyRight">
+
+          <input type="checkbox" id="id-name--1" name="set-name" class="switch-input" onclick="if(this.checked){changeColors(true)}else{changeColors(false)}">
+          <label for="id-name--1" class="switch-label">
+            Red Mode:
+            <span class="toggle--on">ON</span>
+            <span class="toggle--off">OFF</span>
+          </label>
+
+        </div>
       </div>
     </footer>
   </body>
