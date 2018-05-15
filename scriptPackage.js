@@ -7,7 +7,9 @@ function funWithConsoles() {
 }
 
 function changeColors() {
-  var a = 5 + 6;
+  document.getElementById("third").class = "alt-one-third column u-maxHeight";
+  document.getElementById("twoThirds").class = "alt-two-thirds column u-maxHeight u-alt-background";
+  document.getElementById("navigation").class = "alt-Nav-link";
 }
 
 function superScriptFiveMillion() {
