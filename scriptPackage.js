@@ -9,7 +9,10 @@ function funWithConsoles() {
 function changeColors() {
   document.getElementById("third").className = "alt-one-third column u-maxHeight";
   document.getElementById("twoThirds").className = "alt-two-thirds column u-maxHeight u-alt-background";
-  document.getElementsByClassName("Nav-link").className = "alt-Nav-link";
+  var navigation = document.getElementsByClassName("Nav-link");
+  for (var i = 0; i < navigation.length; i++) {
+    navigation[i].className = "alt-Nav-link";
+  }
 }
 
 function superScriptFiveMillion() {
