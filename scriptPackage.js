@@ -7,9 +7,9 @@ function funWithConsoles() {
 }
 
 function changeColors() {
-  document.getElementById("third").class = "alt-one-third column u-maxHeight";
-  document.getElementById("twoThirds").class = "alt-two-thirds column u-maxHeight u-alt-background";
-  document.getElementById("navigation").class = "alt-Nav-link";
+  document.getElementById("third").className = "alt-one-third column u-maxHeight";
+  document.getElementById("twoThirds").className = "alt-two-thirds column u-maxHeight u-alt-background";
+  document.getElementById("navigation").className = "alt-Nav-link";
 }
 
 function superScriptFiveMillion() {
