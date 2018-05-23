@@ -13,6 +13,12 @@ function startGame() {
   inputBox.name = "guess";
   inputBox.target = "weezinator";
   gameInput.appendChild(inputBox);
+  var submitButton = document.createElement("button");
+  submitButton.onclick = "guesserGame()";
+  submitButton.innerHTML = "Guess";
+  gameInput.appendChild(inputBox);
 }
 
-function guesserGame() {}
+function guesserGame() {
+
+}
