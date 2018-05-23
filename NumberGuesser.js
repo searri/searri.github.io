@@ -14,14 +14,15 @@ function startGame() {
   inputBox.type = "text";
   inputBox.name = "guess";
   inputBox.target = "weezinator";
+  inputBox.id = "inputBox";
   gameInput.appendChild(inputBox);
 
-  var submitButton = document.createElement("button");
-  submitButton.onclick = "guesserGame()";
-  submitButton.innerHTML = "Guess";
-  gameInput.appendChild(submitButton);
+  // var submitButton = document.createElement("button");
+  // submitButton.onclick = "guesserGame(3)";
+  // submitButton.innerHTML = "Guess";
+  // gameInput.appendChild(submitButton);
 }
 
-function guesserGame() {
-
+function guesserGame(n) {
+  document.getElementById("output").innerHTML = n;
 }
