@@ -12,17 +12,17 @@ function startGame() {
 
   var inputBox = document.createElement("input");
   inputBox.type = "text";
-  inputBox.name = "guess";
-  inputBox.target = "weezinator";
+  inputBox.target = "weezinator"
   inputBox.id = "inputBox";
   gameInput.appendChild(inputBox);
 
-  // var submitButton = document.createElement("button");
-  // submitButton.onclick = "guesserGame(3)";
-  // submitButton.innerHTML = "Guess";
-  // gameInput.appendChild(submitButton);
+  var submitButton = document.createElement("button");
+  submitButton.onclick = "guesserGame()";
+  submitButton.innerHTML = "Guess";
+  gameInput.appendChild(submitButton);
 }
 
-function guesserGame(n) {
+function guesserGame() {
+  var n = document.getElementById("inputBox");
   document.getElementById("output").innerHTML = n;
 }
