@@ -1,33 +1,36 @@
 function happyBirthday() {
-  //window.alert("HAPPY BIRTHDAY ELLIE!")
+  //window.alert("HAPPY BIRTHDAY ELLIE!");
+  console.log(3);
 }
 
 function startGame() {
   var startSwitch = document.getElementById("starter");
   startSwitch.parentNode.removeChild(startSwitch);
-  document.getElementById("output").innerHTML = "Whaddup nerd, and welcome back to your favorite number guessing game!";
+  document.getElementById("welcome").innerHTML = "Whaddup nerd, and welcome back to your favorite number guessing game!";
 
-  var gameInput = document.createElement("div");
+  var gameInput = document.getElementById("prompt");
   gameInput.innerHTML = "<br>I'm thinking of a number between 1 and 10. <br> Take a guess:";
-  gameInput.id = "prompt";
-  document.getElementById("output").appendChild(gameInput);
 
   var inputBox = document.createElement("input");
   inputBox.type = "text";
-  inputBox.target = "weezinator";
+  // inputBox.target = "weezinator";
   inputBox.id = "inputBox";
   gameInput.appendChild(inputBox);
 
   var submitButton = document.createElement("button");
-  submitButton.onclick = "guesserGame()";
+  submitButton.onclick = function() {
+    var n = document.getElementById("inputBox").value;
+    window.alert(n);
+  };
   submitButton.innerHTML = "Guess";
+  submitButton.id = "dasButtoon";
   gameInput.appendChild(submitButton);
 }
 
-function guesserGame() {
-  var n = document.getElementById("inputBox");
-  document.getElementById("textOut").innerHTML = n;
-}
+// function guesserGame() {
+//   var n = document.getElementById("inputBox").value;
+//   window.alert(n);
+// }
 
 // <input type="text" id="input1" />
 // <button onclick="myJsFunction()">I'm a button</button>
