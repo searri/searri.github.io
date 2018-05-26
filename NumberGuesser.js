@@ -13,7 +13,6 @@ function startGame() {
 
   var inputBox = document.createElement("input");
   inputBox.type = "text";
-  // inputBox.target = "weezinator";
   inputBox.id = "inputBox";
   gameInput.appendChild(inputBox);
 
