@@ -24,12 +24,15 @@ function startGame() {
   submitButton.innerHTML = "Guess";
   submitButton.id = "dasButtoon";
   gameInput.appendChild(submitButton);
+
+  numGen();
 }
 
-// function guesserGame() {
-//   var n = document.getElementById("inputBox").value;
-//   window.alert(n);
-// }
+function numGen() {
+  var n = Math.floor(Math.random() * 10);
+  n++;
+  document.getElementById("weezinator").innerHTML = n;
+}
 
 // <input type="text" id="input1" />
 // <button onclick="myJsFunction()">I'm a button</button>
