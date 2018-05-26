@@ -22,9 +22,13 @@ function startGame() {
     var r = numGen();
     console.log(r);
     console.log(guess);
-    console.log(r == guess);
+    if (r == guess) {
+      document.getElementById("welcome").innerHTML = "Wow. Good job. You guessed my number. Well freakin done."
+    } else {
+      document.getElementById("welcome").innerHTML = "WRONG-O! To be fair, though, the odds aren't on your side."
+    }
   };
-  submitButton.innerHTML = "Guess";
+  submitButton.innerHTML = "Try your luck";
   submitButton.id = "dasButtoon";
   gameInput.appendChild(submitButton);
 
