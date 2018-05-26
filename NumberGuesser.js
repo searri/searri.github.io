@@ -1,6 +1,6 @@
 function happyBirthday() {
   //window.alert("HAPPY BIRTHDAY ELLIE!");
-  console.log(3);
+  console.log("weezy ");
 }
 
 function startGame() {
@@ -18,20 +18,23 @@ function startGame() {
 
   var submitButton = document.createElement("button");
   submitButton.onclick = function() {
-    var n = document.getElementById("inputBox").value;
-    window.alert(n);
+    var guess = document.getElementById("inputBox").value;
+    var r = numGen();
+    console.log(r);
+    console.log(guess);
+    console.log(r == guess);
   };
   submitButton.innerHTML = "Guess";
   submitButton.id = "dasButtoon";
   gameInput.appendChild(submitButton);
 
-  numGen();
+  // numGen();
 }
 
 function numGen() {
   var n = Math.floor(Math.random() * 10);
   n++;
-  document.getElementById("weezinator").innerHTML = n;
+  return n;
 }
 
 // <input type="text" id="input1" />
