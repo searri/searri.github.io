@@ -10,7 +10,7 @@ function changeColors(state) {
   if (state) {
     document.getElementById("third").className = "alt-one-third column u-maxHeight";
     document.getElementById("twoThirds").className = "alt-two-thirds column u-maxHeight u-alt-background";
-    document.getElementById("Home").className = "alt-Home";
+    document.getElementById("sendOff").className = "alt-Home";
     var i = 0;
     while (i < 5) {
       document.getElementById("menu").className = "alt-Nav-link";
@@ -20,6 +20,7 @@ function changeColors(state) {
   } else {
     document.getElementById("third").className = "one-third column u-maxHeight";
     document.getElementById("twoThirds").className = "two-thirds column u-maxHeight u-background";
+    document.getElementById("sendOff").className = "Home";
     var i = 0;
     while (i < 5) {
       document.getElementById("changed").className = "Nav-link";
