@@ -4,23 +4,24 @@ function happyBirthday() {
 }
 
 function startGame1() {
-  var startSwitch = document.getElementById("starter1");
+  var startSwitch = document.getElementById("starter1"); //add text to welcome field
   startSwitch.parentNode.removeChild(startSwitch);
   document.getElementById("welcome").innerHTML = "Whaddup nerd, and welcome back to your favorite number guessing game!";
-  document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
 
-  var gameInput = document.getElementById("prompt");
+  document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2")); //remove other version buttons
+
+  var gameInput = document.getElementById("prompt"); //add text to prompt field
   gameInput.innerHTML = "<br>I'm thinking of a number between 1 and 10. <br> Take a guess:";
 
-  var inputBox = document.createElement("input");
+  var inputBox = document.createElement("input"); //Create the input box
   inputBox.type = "text";
   inputBox.id = "inputBox";
   gameInput.appendChild(inputBox);
 
-  var submitButton = document.createElement("button");
-  submitButton.onclick = function() {
+  var submitButton = document.createElement("button"); //create the guess button
+  submitButton.onclick = function() { //Function associated with the guess button
     var guess = document.getElementById("inputBox").value;
-    var r = numGen();
+    var r = numGen(10);
     console.log(r);
     console.log(guess);
     if (r == guess) {
@@ -30,23 +31,13 @@ function startGame1() {
     }
   };
   submitButton.innerHTML = "Try your luck";
-  submitButton.id = "dasButtoon";
   gameInput.appendChild(submitButton);
 
   // numGen();
 }
 
-function numGen() {
-  var n = Math.floor(Math.random() * 10);
+function numGen(s) {
+  var n = Math.floor(Math.random() * s);
   n++;
   return n;
 }
-
-// <input type="text" id="input1" />
-// <button onclick="myJsFunction()">I'm a button</button>
-// <script type="text/javascript">
-//  function myJsFunction(){
-//     var text=document.getElementById('input1').value;
-//     document.getElementById("starter1").innerHTML = text;
-//  }
-// </script>
