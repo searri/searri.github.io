@@ -33,4 +33,5 @@ function saveState(toSave) {
 
 function analyzeColors() {
   var currState = localStorage.getItem("redMode");
+  changeColors(currState);
 }
