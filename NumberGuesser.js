@@ -14,7 +14,7 @@ function checkLocalStorage() {
 function startGame1() {
   var startSwitch = document.getElementById("starter1"); //add text to welcome field
   startSwitch.parentNode.removeChild(startSwitch);
-  document.getElementById("welcome").innerHTML = "Whaddup nerd, and welcome back to your favorite number guessing game!";
+  document.getElementById("welcome").innerHTML = "Whaddup nerd, and welcome to your favorite number guessing game!";
 
   document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2")); //remove other version buttons
 
@@ -35,17 +35,17 @@ function startGame1() {
     if (r == guess) {
       document.getElementById("welcome").innerHTML = "Wow. Good job. You guessed my number. Well freakin done."
     } else {
-      document.getElementById("welcome").innerHTML = "WRONG-O! To be fair, though, the odds aren't on your side."
+      document.getElementById("welcome").innerHTML = "WRONG-O! To be fair, though, the odds weren't on your side."
     }
   };
-  submitButton.innerHTML = "Try your luck";
+  submitButton.innerHTML = "Spam it! Eventually it'll work.";
   gameInput.appendChild(submitButton);
 }
 
 function startGame2() {
   var startSwitch = document.getElementById("starter2"); //add text to welcome field
   startSwitch.parentNode.removeChild(startSwitch);
-  document.getElementById("welcome").innerHTML = "Whaddup nerd, and welcome back to your favorite number guessing game!";
+  document.getElementById("welcome").innerHTML = "WIMP! Infinite guesses...tsk, tsk.";
 
   document.getElementById("starter1").parentNode.removeChild(document.getElementById("starter1")); //remove other version buttons
 
@@ -64,9 +64,9 @@ function startGame2() {
     console.log(r);
     console.log(guess);
     if (r == guess) {
-      document.getElementById("welcome").innerHTML = "Wow. Good job. You guessed my number. Well freakin done."
+      document.getElementById("welcome").innerHTML = "Wow. You guessed my number. But...you had infinite guesses, sooo..."
     } else {
-      document.getElementById("welcome").innerHTML = "WRONG-O! To be fair, though, the odds aren't on your side."
+      document.getElementById("welcome").innerHTML = "Sorry, mate! Try again."
     }
   };
   submitButton.innerHTML = "Try your luck";
