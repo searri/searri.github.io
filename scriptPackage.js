@@ -28,10 +28,11 @@ function changeColors(state) {
 
 function saveState(toSave) {
   localStorage.setItem("redMode", toSave);
-  analyzeColors();
+  changeColors(toSave);
 }
 
 function analyzeColors() {
   var currState = localStorage.getItem("redMode");
+  console.log(currState);
   changeColors(currState);
 }
