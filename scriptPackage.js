@@ -28,6 +28,7 @@ function changeColors(state) {
 
 function saveState(toSave) {
   localStorage.setItem("redMode", toSave);
+  console.log(localStorage.getItem("redMode"));
   changeColors(toSave);
 }
 
