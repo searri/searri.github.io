@@ -57,10 +57,13 @@ function startGame2() {
   inputBox.id = "inputBox";
   gameInput.appendChild(inputBox);
 
+  var num = numGen(10);
+  localStorage.setItem("weezinator", num);
+
   var submitButton = document.createElement("button"); //create the guess button
   submitButton.onclick = function() { //Function associated with the guess button
     var guess = document.getElementById("inputBox").value;
-    var r = numGen(10);
+    var r = localStorage.getItem("weezinator");
     console.log(r);
     console.log(guess);
     if (r == guess) {
