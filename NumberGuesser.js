@@ -1,10 +1,10 @@
 function happyBirthday() {
   //window.alert("HAPPY BIRTHDAY ELLIE!");
-  console.log("weezy ");
+  console.log("weezy");
 }
 
-function startGame() {
-  var startSwitch = document.getElementById("starter");
+function startGame1() {
+  var startSwitch = document.getElementById("starter1");
   startSwitch.parentNode.removeChild(startSwitch);
   document.getElementById("welcome").innerHTML = "Whaddup nerd, and welcome back to your favorite number guessing game!";
 
@@ -46,6 +46,6 @@ function numGen() {
 // <script type="text/javascript">
 //  function myJsFunction(){
 //     var text=document.getElementById('input1').value;
-//     document.getElementById("starter").innerHTML = text;
+//     document.getElementById("starter1").innerHTML = text;
 //  }
 // </script>
