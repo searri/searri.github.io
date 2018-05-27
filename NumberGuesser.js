@@ -7,6 +7,7 @@ function startGame1() {
   var startSwitch = document.getElementById("starter1");
   startSwitch.parentNode.removeChild(startSwitch);
   document.getElementById("welcome").innerHTML = "Whaddup nerd, and welcome back to your favorite number guessing game!";
+  document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
 
   var gameInput = document.getElementById("prompt");
   gameInput.innerHTML = "<br>I'm thinking of a number between 1 and 10. <br> Take a guess:";
