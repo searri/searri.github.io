@@ -120,56 +120,59 @@ function startGame3() {
       l--;
       if (l == 0) { //loss condition
         console.log("u ded");
+        localStorage.setItem("life", l);
+        ver3updatePrompt();
       }
-      localStorage.setItem("life", l);
-      ver3updatePrompt();
+    };
+    submitButton.innerHTML = "Try your luck";
+    gameInput.appendChild(submitButton);
+
+    ver3updatePrompt();
+  }
+
+  function ver3updatePrompt() {
+    var seed = localStorage.getItem("randSeed");
+    var lyfe = localStorage.getItem("life");
+    var gameInput = document.getElementById("prompt"); //add text to prompt field
+    gameInput.innerHTML = "<br>I'm thinking of a number between 1 and " + seed + ". <br> Take a guess:";
+    if (lyfe == 1) {
+      document.getElementById("lifeLabel").innerHTML = "You have " + lyfe + " life left! Don't mess up!";
+    } else {
+      document.getElementById("lifeLabel").innerHTML = "You have " + lyfe + " lives remaining.";
     }
-  };
-  submitButton.innerHTML = "Try your luck";
-  gameInput.appendChild(submitButton);
-
-  ver3updatePrompt();
-}
-
-function ver3updatePrompt() {
-  var seed = localStorage.getItem("randSeed");
-  var lyfe = localStorage.getItem("life");
-  var gameInput = document.getElementById("prompt"); //add text to prompt field
-  gameInput.innerHTML = "<br>I'm thinking of a number between 1 and " + seed + ". <br> Take a guess:";
-  document.getElementById("lifeLabel").innerHTML = "You have " + lyfe + " lives remaining.";
-}
-
-function advanceLevel(l) {
-  if (l == 2) {
-    document.getElementById("level").innerHTML = "Level II";
-    localStorage.setItem("randSeed", 10);
-  } else if (l == 3) {
-    document.getElementById("level").innerHTML = "Level III";
-    localStorage.setItem("randSeed", 15);
-  } else if (l == 4) {
-    document.getElementById("level").innerHTML = "Level IV";
-    localStorage.setItem("randSeed", 20);
-  } else {
-    window.alert("Error encountered.")
-    pageRefresh();
   }
-}
 
-function numGen(s) {
-  var n = Math.floor(Math.random() * s);
-  n++;
-  console.log(n);
-  return n;
-}
-
-function checkLocalStorage() {
-  if (typeof(Storage) !== "undefined") {
-    window.alert("Your browser is compatible...\nThere must be a different issue.");
-  } else {
-    window.alert("Sorry, this version is incompatible with your browser.")
+  function advanceLevel(l) {
+    if (l == 2) {
+      document.getElementById("level").innerHTML = "Level II";
+      localStorage.setItem("randSeed", 10);
+    } else if (l == 3) {
+      document.getElementById("level").innerHTML = "Level III";
+      localStorage.setItem("randSeed", 15);
+    } else if (l == 4) {
+      document.getElementById("level").innerHTML = "Level IV";
+      localStorage.setItem("randSeed", 20);
+    } else {
+      window.alert("Error encountered.")
+      pageRefresh();
+    }
   }
-}
 
-function pageRefresh() {
-  location.reload();
-}
+  function numGen(s) {
+    var n = Math.floor(Math.random() * s);
+    n++;
+    console.log(n);
+    return n;
+  }
+
+  function checkLocalStorage() {
+    if (typeof(Storage) !== "undefined") {
+      window.alert("Your browser is compatible...\nThere must be a different issue.");
+    } else {
+      window.alert("Sorry, this version is incompatible with your browser.")
+    }
+  }
+
+  function pageRefresh() {
+    location.reload();
+  }
