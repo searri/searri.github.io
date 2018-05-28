@@ -70,21 +70,29 @@ function startGame2() {
 }
 
 function startGame3() {
-  document.getElementById("welcome").innerHTML = "WIMP! Infinite guesses...tsk, tsk.";
+  document.getElementById("welcome").innerHTML = "Ah, so you think you're ready for the big guns, huh?";
+  var levelLabel = document.createElement("h2");
+  levelLabel.innerHTML = "Level I";
+  levelLabel.id = "level";
+  document.getElementById("title").appendChild(levelLabel);
 
   document.getElementById("starter1").parentNode.removeChild(document.getElementById("starter1"));
   document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
   document.getElementById("starter3").parentNode.removeChild(document.getElementById("starter3"));
 
+  localStorage.setItem("randSeed", 6);
+  var seed = localStorage.getItem("randSeed");
+  localStorage.setItem("life", 3);
+  var life = localStorage.getItem("life");
   var gameInput = document.getElementById("prompt"); //add text to prompt field
-  gameInput.innerHTML = "<br>I'm thinking of a number between 1 and 10. <br> Take a guess:";
+  gameInput.innerHTML = "<br>I'm thinking of a number between 1 and " + seed + ". <br> Take a guess:";
 
   var inputBox = document.createElement("input"); //Create the input box
   inputBox.type = "text";
   inputBox.id = "inputBox";
   gameInput.appendChild(inputBox);
 
-  var num = numGen(10);
+  var num = numGen(seed);
   localStorage.setItem("weezinator", num);
 
   var submitButton = document.createElement("button"); //create the guess button
@@ -94,18 +102,19 @@ function startGame3() {
     console.log(r);
     console.log(guess);
     if (r == guess) {
-      document.getElementById("welcome").innerHTML = "Wow. You guessed my number. But...you had infinite guesses, sooo..."
+      document.getElementById("welcome").innerHTML = "correct message"
     } else {
-      document.getElementById("welcome").innerHTML = "Sorry, mate! Try again."
+      document.getElementById("welcome").innerHTML = "incorrect message"
     }
   };
-  submitButton.innerHTML = "Try your luck";
+  submitButton.innerHTML = "Guess (" + life + " lives remaining)";
   gameInput.appendChild(submitButton);
 }
 
 function numGen(s) {
   var n = Math.floor(Math.random() * s);
   n++;
+  console.log(n);
   return n;
 }
 
