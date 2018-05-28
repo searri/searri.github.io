@@ -237,6 +237,12 @@ body {
   padding: 10vh;
 }
 
+.crop {
+  width: 500px;
+  height: 128px;
+  overflow: hidden;
+}
+
 /* ----- GUUS LIEBEN MATERIAL DESIGN SWITCH ----- */
 
 .switch-input {

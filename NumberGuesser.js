@@ -197,8 +197,12 @@ function clearPage() {
 
 function loser() {
   clearPage();
-  document.getElementById("welcome").innerHTML = "HA HA YOU LOST."
+  document.getElementById("welcome").innerHTML = "HA HA YOU LOST.<br><br>"
+  var datDiv = document.createElement("div");
+  datDiv.class = "crop";
+  datDiv.id = "weezy";
+  document.getElementById("welcome").appendChild(datDiv);
   var celebration = document.createElement("img");
   celebration.src = "https://pa1.narvii.com/6645/3bf5660f494a12c0c294084121be1bb8231857d9_hq.gif";
-  document.getElementById("welcome").appendChild(celebration);
+  document.getElementById("weezy").appendChild(celebration);
 }
