@@ -116,3 +116,7 @@ function checkLocalStorage() {
     window.alert("Sorry, this version is incompatible with your browser.")
   }
 }
+
+function pageRefresh() {
+  location.reload();
+}
