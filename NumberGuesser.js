@@ -89,7 +89,7 @@ function startGame3() {
   document.getElementById("instructions").parentNode.removeChild(document.getElementById("instructions"));
 
   localStorage.setItem("randSeed", 5); //set life and random number seed in memory
-  localStorage.setItem("life", 3);
+  localStorage.setItem("life", 5);
   localStorage.setItem("gameState", 1);
 
   var num = numGen(localStorage.getItem("randSeed"));
@@ -108,7 +108,7 @@ function startGame3() {
     console.log(guess);
     if (r == guess) {
       document.getElementById("welcome").innerHTML = "CONGRATULATIONS NERD! New level unlocked and life refilled.";
-      localStorage.setItem("life", 3);
+      localStorage.setItem("life", 5);
       var l = localStorage.getItem("gameState");
       l++;
       localStorage.setItem("gameState", l);
@@ -157,7 +157,7 @@ function advanceLevel(l) {
   } else if (l == 5) {
     console.log("u win");
     clearPage();
-    document.getElementById("welcome").innerHTML = "Good job. You win...absolutely nothing."
+    document.getElementById("welcome").innerHTML = "Good job. You win...absolutely nothing.<br><br>"
     var celebration = document.createElement("img");
     celebration.src = "https://i.gifer.com/Pcb.gif";
     document.getElementById("welcome").appendChild(celebration);
