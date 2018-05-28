@@ -1,7 +1,7 @@
 function happyBirthday() {
   //window.alert("HAPPY BIRTHDAY ELLIE!");
   console.log("weezy");
-  analyzeColors();
+  // analyzeColors();
 }
 
 function checkLocalStorage() {
