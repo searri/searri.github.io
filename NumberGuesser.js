@@ -10,6 +10,7 @@ function startGame1() {
   document.getElementById("starter1").parentNode.removeChild(document.getElementById("starter1"));
   document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
   document.getElementById("starter3").parentNode.removeChild(document.getElementById("starter3"));
+  document.getElementById("instructions").parentNode.removeChild(document.getElementById("instructions"));
 
   var gameInput = document.getElementById("prompt"); //add text to prompt field
   gameInput.innerHTML = "<br>I'm thinking of a number between 1 and 10. <br> Take a guess:";
@@ -41,6 +42,7 @@ function startGame2() {
   document.getElementById("starter1").parentNode.removeChild(document.getElementById("starter1"));
   document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
   document.getElementById("starter3").parentNode.removeChild(document.getElementById("starter3"));
+  document.getElementById("instructions").parentNode.removeChild(document.getElementById("instructions"));
 
   var gameInput = document.getElementById("prompt"); //add text to prompt field
   gameInput.innerHTML = "<br>I'm thinking of a number between 1 and 10. <br> Take a guess:";
@@ -84,6 +86,7 @@ function startGame3() {
   document.getElementById("starter1").parentNode.removeChild(document.getElementById("starter1"));
   document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
   document.getElementById("starter3").parentNode.removeChild(document.getElementById("starter3"));
+  document.getElementById("instructions").parentNode.removeChild(document.getElementById("instructions"));
 
   localStorage.setItem("randSeed", 5); //set life and random number seed in memory
   localStorage.setItem("life", 3);
@@ -116,7 +119,7 @@ function startGame3() {
       var l = localStorage.getItem("life");
       l--;
       if (l == 0) { //loss condition
-        console.log("u ded");
+        loser();
       }
       localStorage.setItem("life", l);
       ver3updatePrompt();
@@ -175,7 +178,7 @@ function numGen(s) {
 
 function checkLocalStorage() {
   if (typeof(Storage) !== "undefined") {
-    window.alert("Your browser is compatible...\nThere must be a different issue.");
+    window.alert("Your browser is compatible...\nThere must be a different issue.\n\n...you better be following my instructions.");
   } else {
     window.alert("Sorry, this version is incompatible with your browser.")
   }
