@@ -87,6 +87,7 @@ function startGame3() {
 
   localStorage.setItem("randSeed", 6); //set life and random number seed in memory
   localStorage.setItem("life", 3);
+  localStorage.setItem("gameState", 1);
 
   var num = numGen(localStorage.getItem("randSeed"));
   localStorage.setItem("weezinator", num);
@@ -103,9 +104,14 @@ function startGame3() {
     console.log(r);
     console.log(guess);
     if (r == guess) {
-      document.getElementById("welcome").innerHTML = "Wow. You guessed my number. But...you had infinite guesses, sooo..."
+      document.getElementById("welcome").innerHTML = "CONGRATULATIONS NERD! New level unlocked and life refilled.";
+      localStorage.setItem("life", 3);
+      var l = localStorage.getItem("gameState");
+      l++;
+      localStorage.setItem("gameState", l);
+      ver3updatePrompt();
     } else {
-      document.getElementById("welcome").innerHTML = "Sorry, mate! Try again."
+      document.getElementById("welcome").innerHTML = "Ouch...wrong answer. Be a shame if you lost all your progress...";
     }
   };
   submitButton.innerHTML = "Try your luck";
