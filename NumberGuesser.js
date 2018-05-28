@@ -120,16 +120,17 @@ function startGame3() {
       l--;
       if (l == 0) { //loss condition
         console.log("u ded");
-        localStorage.setItem("life", l);
-        ver3updatePrompt();
       }
-    };
-    submitButton.innerHTML = "Try your luck";
-    gameInput.appendChild(submitButton);
+      localStorage.setItem("life", l);
+      ver3updatePrompt();
+    }
+  };
+  submitButton.innerHTML = "Take a guess";
+  gameInput.appendChild(submitButton);
 
-    ver3updatePrompt();
-  }
+  ver3updatePrompt();
 }
+
 
 function ver3updatePrompt() {
   var seed = localStorage.getItem("randSeed");
@@ -157,6 +158,8 @@ function advanceLevel(l) {
     window.alert("Error encountered.");
     pageRefresh();
   }
+  var num = numGen(localStorage.getItem("randSeed"));
+  localStorage.setItem("weezinator", num);
 }
 
 function numGen(s) {
