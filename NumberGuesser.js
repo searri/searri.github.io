@@ -7,9 +7,9 @@ function happyBirthday() {
 function startGame1() {
   document.getElementById("welcome").innerHTML = "Whaddup nerd, and welcome to your favorite number guessing game!";
   //Remove other version buttons
-  document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter1"));
+  document.getElementById("starter1").parentNode.removeChild(document.getElementById("starter1"));
   document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
-  document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter3"));
+  document.getElementById("starter3").parentNode.removeChild(document.getElementById("starter3"));
 
   var gameInput = document.getElementById("prompt"); //add text to prompt field
   gameInput.innerHTML = "<br>I'm thinking of a number between 1 and 10. <br> Take a guess:";
@@ -38,9 +38,9 @@ function startGame1() {
 function startGame2() {
   document.getElementById("welcome").innerHTML = "WIMP! Infinite guesses...tsk, tsk.";
 
-  document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter1"));
+  document.getElementById("starter1").parentNode.removeChild(document.getElementById("starter1"));
   document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
-  document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter3"));
+  document.getElementById("starter3").parentNode.removeChild(document.getElementById("starter3"));
 
   var gameInput = document.getElementById("prompt"); //add text to prompt field
   gameInput.innerHTML = "<br>I'm thinking of a number between 1 and 10. <br> Take a guess:";
@@ -72,9 +72,9 @@ function startGame2() {
 function startGame3() {
   document.getElementById("welcome").innerHTML = "WIMP! Infinite guesses...tsk, tsk.";
 
-  document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter1"));
+  document.getElementById("starter1").parentNode.removeChild(document.getElementById("starter1"));
   document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
-  document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter3"));
+  document.getElementById("starter3").parentNode.removeChild(document.getElementById("starter3"));
 
   var gameInput = document.getElementById("prompt"); //add text to prompt field
   gameInput.innerHTML = "<br>I'm thinking of a number between 1 and 10. <br> Take a guess:";
