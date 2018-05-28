@@ -70,7 +70,7 @@ function startGame2() {
 }
 
 function startGame3() {
-  var gameInput = document.getElementById("prompt");
+  var gameInput = document.getElementById("input");
   document.getElementById("welcome").innerHTML = "Ah, so you think you're ready for the big guns, huh?";
   var levelLabel = document.createElement("h2");
   levelLabel.innerHTML = "Level I";
