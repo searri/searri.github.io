@@ -80,19 +80,15 @@ function startGame3() {
   document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
   document.getElementById("starter3").parentNode.removeChild(document.getElementById("starter3"));
 
-  localStorage.setItem("randSeed", 6);
-  var seed = localStorage.getItem("randSeed");
+  localStorage.setItem("randSeed", 6); //set life and random number seed in memory
   localStorage.setItem("life", 3);
-  var life = localStorage.getItem("life");
-  var gameInput = document.getElementById("prompt"); //add text to prompt field
-  gameInput.innerHTML = "<br>I'm thinking of a number between 1 and " + seed + ". <br> Take a guess:";
 
   var inputBox = document.createElement("input"); //Create the input box
   inputBox.type = "text";
   inputBox.id = "inputBox";
-  gameInput.appendChild(inputBox);
+  document.getElementById("prompt").appendChild(inputBox);
 
-  var num = numGen(seed);
+  var num = numGen(localStorage.getItem("randSeed"));
   localStorage.setItem("weezinator", num);
 
   var submitButton = document.createElement("button"); //create the guess button
@@ -107,8 +103,20 @@ function startGame3() {
       document.getElementById("welcome").innerHTML = "incorrect message"
     }
   };
-  submitButton.innerHTML = "Guess (" + life + " lives remaining)";
-  gameInput.appendChild(submitButton);
+  submitButton.id = "bootun";
+  submitButton.innerHTML = "temp";
+  document.getElementById("prompt").appendChild(submitButton);
+  console.log(document.getElementById("bootun").innerHTML);
+
+  ver3updatePrompt();
+}
+
+function ver3updatePrompt() {
+  var seed = localStorage.getItem("randSeed");
+  var lyfe = localStorage.getItem("life");
+  var gameInput = document.getElementById("prompt"); //add text to prompt field
+  gameInput.innerHTML = "<br>I'm thinking of a number between 1 and " + seed + ". <br> Take a guess:";
+  document.getElementById("bootun").innerHTML = "Guess (" + lyfe + " lives remaining)";
 }
 
 function numGen(s) {
