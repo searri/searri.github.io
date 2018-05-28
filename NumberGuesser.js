@@ -6,7 +6,7 @@ function happyBirthday() {
 
 function checkLocalStorage() {
   if (typeof(Storage) !== "undefined") {
-    startGame2();
+    window.alert("Your browser is compatible...\nThere must be a different issue.");
   } else {
     window.alert("Sorry, this version is incompatible with your browser.")
   }
