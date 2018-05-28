@@ -112,6 +112,13 @@ function startGame3() {
       ver3updatePrompt();
     } else {
       document.getElementById("welcome").innerHTML = "Ouch...wrong answer. Be a shame if you lost all your progress...";
+      var l = localStorage.getItem("life");
+      l--;
+      if (l == 0) {
+        console.log("u ded");
+      }
+      localStorage.setItem("life", l);
+      ver3updatePrompt();
     }
   };
   submitButton.innerHTML = "Try your luck";
