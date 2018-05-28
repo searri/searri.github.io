@@ -2,10 +2,6 @@ function helloWorld() {
   window.alert("Hello, world!");
 }
 
-function funWithConsoles() {
-  console.log(8 * 3);
-}
-
 function changeColors(state) {
   if (state) {
     document.getElementById("third").className = "alt-one-third column u-maxHeight";
@@ -30,7 +26,14 @@ function changeColors(state) {
   }
 }
 
-function superScriptFiveMillion() {
-  var input = prompt("Write something", "Anything");
-  document.getElementById("demo").innerHTML = input;
+function saveState(toSave) {
+  localStorage.setItem("redMode", toSave);
+  console.log(localStorage.getItem("redMode"));
+  changeColors(toSave);
+}
+
+function analyzeColors() {
+  var currState = localStorage.getItem("redMode");
+  console.log(currState);
+  changeColors(currState);
 }

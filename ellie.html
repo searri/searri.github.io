@@ -12,6 +12,7 @@
     </script>
 
     <script src="NumberGuesser.js"></script>
+    <script src="scriptPackage.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +35,7 @@
     <div class="container">
       <div class="row">
         <!--LEFT-->
-        <section class="one-third column u-maxHeight">
+        <section class="one-third column u-maxHeight" id = "third">
           <div class="Profile-pane-wrapper">
             <div class="Photo-wrapper">
               <img class="My-Face" src="./images/rick.jpg">
@@ -46,25 +47,37 @@
               <p class="Description">
                 Computer Science and Physics<br>George Washington University<br><br>
               </p>
-              <p class="Home">
-                <a href="index.html">Home</a>
-              </p>
+              <p class="Home" id = "sendOff"><a href="index.html">Home</a></p><br><br>
+              <button onclick="checkLocalStorage()">RICK the game isn't working</button>
             </div>
           </div>
         </section>
 
         <!--RIGHT-->
-        <section class="two-thirds column u-maxHeight">
+        <section class="two-thirds column u-maxHeight" id = "twoThirds">
           <div class="Nav">
             <div class="Schedule">
-              <h1>Number Guesser</h1><br>
-              <button id = "starter1" onclick="startGame1()"><b>Version 1</b> (1 guess)</button>
-              <br>
-              <button id = "starter2" onclick="checkLocalStorage()"><b>Version 2</b> (Infinite guesses)</button>
+              <h1 id = "title">Number Guesser<br><br></h1><br>
+              <button id = "starter1" onclick="startGame1()"><b>Version 1</b> (1 guess)</button><br>
+              <button id = "starter2" onclick="startGame2()"><b>Version 2</b> (Infinite guesses)</button><br>
+              <button id = "starter3" onclick="startGame3()"><b>Version 3</b> (3 guesses, 4 levels)</button><br>
+              <p id = "instructions">IMPORTANT NOTE: Don't press enter to submit. Actually click the button.</p><br>
               <p id = "welcome"></p>
               <p id = "prompt"></p>
+              <p id = "input"></p>
+            </div>
+            <div class="Schedule">
+              <button onclick="pageRefresh()">Return to menu</button>
             </div>
           </div>
+        </section>
+
+        <section style="display:none">
+          <div id = "menu"></div>
+          <div id = "menu"></div>
+          <div id = "menu"></div>
+          <div id = "menu"></div>
+          <div id = "menu"></div>
         </section>
 
       </div>

@@ -11,6 +11,8 @@
       gtag('config', 'UA-50391638-10');
     </script>
 
+    <script src="scriptPackage.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick Sear | APSC1001</title>
@@ -27,11 +29,12 @@
 
     <!-- this is a comment weeeee -->
   </head>
+  <!-- <body onload="analyzeColors()"> -->
   <body>
     <div class="container">
       <div class="row">
         <!--LEFT-->
-        <section class="one-third column u-maxHeight">
+        <section class="one-third column u-maxHeight" id = "third">
           <div class="Profile-pane-wrapper">
             <div class="Photo-wrapper">
               <img class="My-Face" src="./images/rick.jpg">
@@ -43,7 +46,7 @@
               <p class="Description">
                 Computer Science and Physics<br>George Washington University<br><br>
               </p>
-              <p class="Home">
+              <p class="Home" id = "sendOff">
                 <a href="index.html">Home</a>
               </p>
             </div>
@@ -51,14 +54,20 @@
         </section>
 
         <!--RIGHT-->
-        <section class="two-thirds column u-maxHeight">
+        <section class="two-thirds column u-maxHeight" id = "twoThirds">
           <div class="Slides">
 
             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSQYisB2yTWwnBiw_ydUcyYWg9yVuKrnlRWHUuLvYw2nECSkE6lV0xd_Oa1SsrN4uCM2PaIJisyg71D/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
           </div>
         </section>
-
+        <section style="display:none">
+          <div id = "menu"></div>
+          <div id = "menu"></div>
+          <div id = "menu"></div>
+          <div id = "menu"></div>
+          <div id = "menu"></div>
+        </section>
       </div>
     </div>
 
