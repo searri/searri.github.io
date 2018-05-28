@@ -85,7 +85,7 @@ function startGame3() {
   document.getElementById("starter2").parentNode.removeChild(document.getElementById("starter2"));
   document.getElementById("starter3").parentNode.removeChild(document.getElementById("starter3"));
 
-  localStorage.setItem("randSeed", 6); //set life and random number seed in memory
+  localStorage.setItem("randSeed", 5); //set life and random number seed in memory
   localStorage.setItem("life", 3);
   localStorage.setItem("gameState", 1);
 
@@ -108,13 +108,17 @@ function startGame3() {
       localStorage.setItem("life", 3);
       var l = localStorage.getItem("gameState");
       l++;
+      if (l == 5) { //victory condition
+        console.log("u win");
+      }
       localStorage.setItem("gameState", l);
+      advanceLevel(l);
       ver3updatePrompt();
     } else {
       document.getElementById("welcome").innerHTML = "Ouch...wrong answer. Be a shame if you lost all your progress...";
       var l = localStorage.getItem("life");
       l--;
-      if (l == 0) {
+      if (l == 0) { //loss condition
         console.log("u ded");
       }
       localStorage.setItem("life", l);
@@ -133,6 +137,22 @@ function ver3updatePrompt() {
   var gameInput = document.getElementById("prompt"); //add text to prompt field
   gameInput.innerHTML = "<br>I'm thinking of a number between 1 and " + seed + ". <br> Take a guess:";
   document.getElementById("lifeLabel").innerHTML = "You have " + lyfe + " lives remaining.";
+}
+
+function advanceLevel(l) {
+  if (l == 2) {
+    document.getElementById("level").innerHTML = "Level II";
+    localStorage.setItem("randSeed", 10);
+  } else if (l == 3) {
+    document.getElementById("level").innerHTML = "Level III";
+    localStorage.setItem("randSeed", 15);
+  } else if (l == 4) {
+    document.getElementById("level").innerHTML = "Level IV";
+    localStorage.setItem("randSeed", 20);
+  } else {
+    window.alert("Error encountered.")
+    pageRefresh();
+  }
 }
 
 function numGen(s) {
