@@ -108,9 +108,6 @@ function startGame3() {
       localStorage.setItem("life", 3);
       var l = localStorage.getItem("gameState");
       l++;
-      if (l == 5) { //victory condition
-        console.log("u win");
-      }
       localStorage.setItem("gameState", l);
       advanceLevel(l);
       ver3updatePrompt();
@@ -125,7 +122,7 @@ function startGame3() {
       ver3updatePrompt();
     }
   };
-  submitButton.innerHTML = "Take a guess";
+  submitButton.innerHTML = "Is it right?";
   gameInput.appendChild(submitButton);
 
   ver3updatePrompt();
@@ -154,6 +151,9 @@ function advanceLevel(l) {
   } else if (l == 4) {
     document.getElementById("level").innerHTML = "Level IV";
     localStorage.setItem("randSeed", 20);
+  } else if (l == 5) {
+    console.log("u win");
+    clearPage();
   } else {
     window.alert("Error encountered.");
     pageRefresh();
@@ -179,4 +179,11 @@ function checkLocalStorage() {
 
 function pageRefresh() {
   location.reload();
+}
+
+function clearPage() {
+  document.getElementById("input").parentNode.removeChild(document.getElementById("input"));
+  document.getElementById("prompt").parentNode.removeChild(document.getElementById("prompt"));
+  document.getElementById("level").parentNode.removeChild(document.getElementById("level"));
+  document.getElementById("lifeLabel").parentNode.removeChild(document.getElementById("lifeLabel"));
 }
