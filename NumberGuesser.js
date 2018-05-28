@@ -199,7 +199,7 @@ function loser() {
   clearPage();
   document.getElementById("welcome").innerHTML = "HA HA YOU LOST.<br><br>"
   var datDiv = document.createElement("div");
-  datDiv.class = "crop";
+  datDiv.className = "crop";
   datDiv.id = "weezy";
   document.getElementById("welcome").appendChild(datDiv);
   var celebration = document.createElement("img");

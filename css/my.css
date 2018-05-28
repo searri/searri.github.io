@@ -241,6 +241,7 @@ body {
   width: 500px;
   height: 128px;
   overflow: hidden;
+  margin-left: -25%;
 }
 
 /* ----- GUUS LIEBEN MATERIAL DESIGN SWITCH ----- */
