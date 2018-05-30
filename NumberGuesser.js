@@ -1,5 +1,5 @@
 function happyBirthday() {
-  //window.alert("HAPPY BIRTHDAY ELLIE!");
+  window.alert("HAPPY BIRTHDAY ELLIE!");
   console.log("weezy");
   // analyzeColors();
 }
