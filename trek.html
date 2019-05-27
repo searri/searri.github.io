@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50391638-10"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-50391638-10');
+    </script>
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#99CCFF">
+
+    <title>Star Trek Combat Simulator GUI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/my.css">
+
+</head>
+
+<body style="background-color: black; color: white;">
+    <div style="text-align:center">
+        <h1>Star Trek Combat Simulator Control Panel</h1><hr><br><br>
+        <form id="gameStartInfo" onsubmit="getStartInfo()">
+            <input type="number" id="maxVal">
+            <input type="submit" value="Begin!">
+        </form>
+
+        <div id="putSliderHere">
+        </div>
+
+        <div id="demo">
+        </div>
+    </div>
+</body>
+
+<script src="trekScript.js"></script>
+
+</html>
