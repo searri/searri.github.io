@@ -9,9 +9,6 @@ a {
   text-decoration: none;
   user-select: none;
 }
-a :focus {
-  outline: none;
-}
 
 body {
   overflow-x: hidden;
