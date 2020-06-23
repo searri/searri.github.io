@@ -50,5 +50,8 @@
     {% if site.hire %}
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Seeking job opportunities</span>
     {% endif %}
+    <span title="Resume" class="d-inline-block f5 rounded-2 bg-blue py-1 px-2">
+      <a href="{{ site.baseurl }}{% link resume.pdf %}" target="_blank" class="text-white">View my resume</a>
+    </span>
   </div>
 {% endif %}
