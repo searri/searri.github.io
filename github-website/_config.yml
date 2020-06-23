@@ -10,6 +10,8 @@ plugins:
 
 permalink: /:title/
 
+res_updated: "June 23, 2020"
+
 hire: true
 
 collections:
