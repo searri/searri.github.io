@@ -1,18 +1,25 @@
 layout: sidebar
 style: dark
 
+full_name: "Rick Sear"
+
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
 
-permalink: /:year/:month/:day/:title/
+permalink: /:title/
+
+hire: true
+
+collections:
+  about:
+    output: true
 
 defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "posts"
     values:
       layout: "post"
 
@@ -21,10 +28,10 @@ projects:
   # sort_by options:
   #   - pushed
   #   - stars
-  limit: 9
+  limit: 3
   exclude:
     archived: false
-    forks: true
+    forks: false
     projects:
     # - repo-name
 
