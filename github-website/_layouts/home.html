@@ -9,20 +9,13 @@
     </div>
 
     <div class="my-6">
-      {% include projects.html %}
+      {% include menu.html %}
     </div>
 
-    {% if site.topics %}
-      <div class="my-6">
-        {% include interests.html %}
-      </div>
-    {% endif %}
-
-    {% unless posts_total == 0 %}
-      <div class="my-6">
-        {% include thoughts.html %}
-      </div>
-    {% endunless %}
+    <div class="my-6">
+      {% include projects.html %}
+    </div>
+  
   </div>
 {% else %}
   <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
@@ -40,11 +33,8 @@
 
         {% include menu.html %}
 
-        <!-- {% if site.topics %}
-          {% include interests.html %}
-        {% endif %} -->
-
         {% include projects.html %}
+      
       </div>
     </div>
   </div>
