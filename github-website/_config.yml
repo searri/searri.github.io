@@ -30,7 +30,7 @@ projects:
   # sort_by options:
   #   - pushed
   #   - stars
-  limit: 3
+  limit: 6
   exclude:
     archived: false
     forks: false
@@ -38,9 +38,9 @@ projects:
     # - repo-name
 
 social_media:
+  linkedin: richard-sear
   facebook: TheRealRickSear
   instagram: _searri
-  linkedin: richard-sear
 
 topics:
   - name: CSS
