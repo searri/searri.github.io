@@ -1,0 +1,43 @@
+layout: sidebar
+style: dark
+
+full_name: "Rick Sear"
+
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+
+permalink: /:title/
+
+res_updated: "June 23, 2020"
+
+hire: "Seeking employment starting May 2021"
+
+collections:
+  about:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "post"
+
+projects:
+  sort_by: pushed
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 6
+  exclude:
+    archived: false
+    forks: false
+    projects:
+    # - repo-name
+
+social_media:
+  linkedin: richard-sear
+  facebook: TheRealRickSear
+  instagram: _searri
