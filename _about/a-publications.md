@@ -5,7 +5,7 @@ subhead: "Rick's academic work"
 date: 2020-06-25
 ---
 
-Rick currently works on research with [Dr. Neil Johnson](https://en.wikipedia.org/wiki/Neil_F._Johnson)'s research group, studying the many-body physics of online extremism. His personal contribution is the application of several machine learning techniques to content shared in these sites.
+Rick currently works on research with <a href="https://en.wikipedia.org/wiki/Neil_F._Johnson" target="_blank">Dr. Neil Johnson's</a> research group, studying the many-body physics of online extremism. His personal contribution is the application of several machine learning techniques to content shared in these sites.
 
 <a href="https://orcid.org/0000-0002-1871-7478" target="_blank">Find his work on ORCID</a>.
 
