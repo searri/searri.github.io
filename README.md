@@ -11,20 +11,16 @@ If, for some reason, you'd like to fork or run this website locally, you'll need
 ```
 gem install jekyll bundler
 ```
-3. Change into your new directory
-```
-cd personal-website
-```
-4. Install missing gems
+3. Install missing gems
 ```
 bundle install
 ```
-5. Build the site and make it available on a local server
+4. Build the site and make it available on a local server
 ```
 bundle exec jekyll serve
 ```
-6. Now browse to [http://localhost:4000](http://localhost:4000)
+5. Now browse to [http://localhost:4000](http://localhost:4000)
 
-You'll need to kill the Ruby process and re-run step 5 when you make changes to `_config.yml`, but otherwise you can make changes to the displayed webpages and they will be updated.
+You'll need to kill the Ruby process and re-run step 4 when you make changes to `_config.yml`, but otherwise you can make changes to the displayed webpages and they will be updated.
 
 Check out the [original repository's README](https://github.com/github/personal-website/blob/master/README.md) for more information.
