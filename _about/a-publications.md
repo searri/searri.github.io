@@ -3,6 +3,7 @@ title: "Publications"
 published: true
 subhead: "Rick's academic work"
 date: 2020-06-25
+permalink: "/publications/"
 ---
 
 Rick currently works on research with <a href="https://en.wikipedia.org/wiki/Neil_F._Johnson" target="_blank">Dr. Neil Johnson's</a> research group, studying the many-body physics of online extremism. His personal contribution is the application of several machine learning techniques to content shared in these sites.

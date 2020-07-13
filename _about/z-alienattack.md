@@ -3,6 +3,7 @@ title: "Alien Attack"
 published: true
 subhead: "An arcade-style video game in Java"
 date: 2020-06-23
+permalink: "/alienattack/"
 ---
 
 One of the projects I worked on in Fall 2018 was a game in Java. 
