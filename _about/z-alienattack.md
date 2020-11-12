@@ -2,7 +2,7 @@
 title: "Alien Attack"
 published: true
 subhead: "An arcade-style video game in Java"
-date: 2020-06-23
+date: 2018-12-21
 permalink: "/alienattack/"
 ---
 
