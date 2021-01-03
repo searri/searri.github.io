@@ -2,7 +2,7 @@
 title: "Class Projects"
 published: true
 subhead: "What has Rick worked on in class?"
-date: 2020-06-25
+date: 2021-01-03
 ---
 
 Unfortunately, academic integrity rules prevent me from openly sharing the bulk of my work, as it consists mainly of class projects that are turned in for a grade.
@@ -17,3 +17,4 @@ But here are some of the things I've done over the years:
 - Implemented process synchronization in the xv6 OS (using various types of locks)
 - Created BrokerBot, an IoT device using Arduino and AWS:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CLxOjfTQ5pU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Implemented a non-neural NLP method for improving short-text topic classification tasks and replicated results (team project)
