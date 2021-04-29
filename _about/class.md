@@ -2,7 +2,7 @@
 title: "Class Projects"
 published: true
 subhead: "What has Rick worked on in class?"
-date: 2021-04-26
+date: 2021-04-29
 ---
 
 Unfortunately, academic integrity rules prevent me from openly sharing the bulk of my work, as it consists mainly of class projects that are turned in for a grade.
@@ -17,6 +17,7 @@ But here are some of the things I've done over the years:
 - Implemented process synchronization in the xv6 OS (using various types of locks)
 - Created BrokerBot, an IoT device using Arduino and AWS (watch the video below)
 - Implemented a non-neural NLP method for improving short-text topic classification tasks and replicated results (team project)
+- Built an Android app which uses object detection and depth mapping to act as a digital seeing eye dog (team project): <a href="https://searri.github.io/project-dog/" target="_blank">explore the website here</a>
 
 <br>
 
