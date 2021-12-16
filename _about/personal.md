@@ -1,8 +1,9 @@
 ---
-title: "Interests & Activities"
+title: "About"
 published: true
-subhead: "What does Rick do in his spare time?"
-date: 2021-08-26
+subhead: "Who is Rick Sear?"
+date: 2021-12-15
+permalink: about
 ---
 
 Rick has a degree in Computer Science from the George Washington University, with minors in Physics and Mathematics. He hails from Wisconsin and is interested in artificial intelligence, in particular its applications in computational social science.
