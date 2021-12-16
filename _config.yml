@@ -3,6 +3,9 @@ style: dark
 
 full_name: "Rick Sear"
 
+main_title: "My Work"
+main_subtitle: "From undergraduate coding projects to academic publications, my past work covers a wide variety of areas."
+
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
