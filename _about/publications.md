@@ -2,7 +2,7 @@
 title: "Publications"
 published: true
 subhead: "Rick's academic work"
-date: 2022-01-30
+date: 2022-04-11
 permalink: "publications"
 ---
 
@@ -12,6 +12,7 @@ Rick currently works on research with <a href="https://en.wikipedia.org/wiki/Nei
 
 He is co-author on the following papers (all links are DOIs):
 - <a href="https://doi.org/10.1007/978-3-030-96188-6_12" target="_blank">Machine Learning Reveals Adaptive COVID-19 Narratives in Online Anti-Vaccination Network</a>, 3/29/22
+- <a href="https://doi.org/10.54364/aaiml.2022.1117" target="_blank">Dynamic Latent Dirichlet Allocation Tracks Evolution of Online Hate Topics</a>, 2/24/22
 - <a href="https://doi.org/10.1109/ACCESS.2021.3138982" target="_blank">How Social Media Machinery Pulled Mainstream Parenting Communities Closer to Extremes and their Misinformation during Covid-19</a>, 12/27/21
 - <a href="https://doi.org/10.54364/aaiml.2021.1112" target="_blank">
 Machine Learning Language Models: Achilles Heel for Social Media Platforms and a Possible Solution</a>, 12/23/21
