@@ -1,0 +1,116 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}        
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             
+% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\moderncvcolor{blue}                               
+% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+
+% \renewcommand{\familydefault}{\sfdefault}         
+% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+%\nopagenumbers{}                                  
+% uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.75]{geometry}
+
+%\setlength{\makecvtitlenamewidth}{10cm}          
+% for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Richard}{Sear}
+\phone[mobile]{+1~(414)~491~6731}
+\email{searri98@gmail.com}
+\homepage{searri.github.io}
+\social[linkedin]{richard-sear}
+\social[github]{searri}
+
+
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2017--2021}{Bachelor of Science}{The George Washington University}{Washington, DC, USA}{GPA: 3.90, University Honors Program, Summa Cum Laude}{Major: Computer Science, Minors: Physics and Mathematics}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
+
+\section{Experience}
+
+\cventry{2018--present}{Undergraduate Research Assistant}{GWU Physics Department}{Washington}{DC}{Working with Dr. Neil Johnson’s research team, studying many-body physics of user behavior in online extremist groups.
+    \newline{}%
+    Personal contributions in the area of artificial intelligence:
+    \begin{itemize}%
+        \item Performed generative text experiments using GPT-2
+        \item Constructed dynamic LDA models of anti-vaccine discussions' evolution during the COVID-19 pandemic
+        \item Published work on topic analysis of anti-vaccine and pro-vaccine narratives during the early days of the COVID-19 pandemic (May 2020)
+        \item Developed open-source code library to aid unsupervised natural language processing experiments: \url{https://github.com/gwdonlab/ogm}
+        \item Used Microsoft CNTK to train CNN for avatar categorization
+        \item Presented avatar investigations at GW Research Days student colloquium (April 2019)
+    \end{itemize}}
+
+\cventry{Fall 2020}{Learning Assistant}{GW SEAS APSC 1001}{Washington}{DC}{Providing synchronous and asynchronous instructional support and assistance to first-year students in the remotely-taught \textit{Introduction to Engineering for Undeclared Majors} class.
+    \newline{}%
+    Personal contributions:
+    \begin{itemize}%
+        \item Built and maintained class website: \url{https://gwu-apsc1001.github.io/}
+        \item Held weekly office hours
+        \item Provided instructional assistance through classroom Slack Workspace
+    \end{itemize}}
+
+\cventry{Summer 2020}{Independent Contractor}{ClustrX, LLC}{Washington}{DC}{Contributed to Google Jigsaw project applying natural language processing towards identifying “flavors” (categories) and intensity of online hate
+    \newline{}%
+    Personal contributions:
+    \begin{itemize}
+        \item Performed supervised ensemble machine learning experiments to classify hate “flavors”
+        \item Integrated Google’s Perspective models with traditional methods (such as IRT models) to find effective ways of scoring hate intensity
+        \item Developed several machine learning pipelines for efficiently classifying hateful content in bulk
+    \end{itemize}}
+
+\cventry{Summer 2019}{Student Researcher}{Johns Hopkins HLTCOE SCALE Program}{Baltimore}{MD}{Worked on a small team on a project centered around Named Entity Recognition (NER)\newline{}
+    Personal contributions:
+    \begin{itemize}%
+        \item Utilized TensorFlow to analyze effects of reduced- and partially reduced-size training sets in both topic and NER models
+        \item Investigated results of iteratively fine-tuning Google’s BERT model using a series of language processing tasks
+        \item Presented findings with team at SCALE end-of-summer colloquium
+    \end{itemize}}
+
+\cventry{Summer 2018}{CTO Intern}{Buchanan and Edwards, Inc.}{Rosslyn}{VA}{Part of a small R\&D team developing emotion recognition software\newline{}
+    Personal contributions:
+    \begin{itemize}%
+        \item  Trained machine learning model to identify primary emotions with around 15\% average error rate using Microsoft CNTK
+        \item Conducted unsupervised k-means clustering on facial data to begin work on experimental model for identifying microexpressions in neutral faces
+        \item Delivered Azure webapp built with Flask to analyze uploaded images and videos
+    \end{itemize}}
+
+\section{Programming Languages}
+\cvitem{Proficient}{Python, Java, C, Arduino, Bash, PHP, SQL (MySQL, PostgreSQL)}
+\cvitem{Familiar}{MATLAB, Mathematica, LaTeX, Make, MongoDB}
+
+\section{Notable Academic Projects}
+\cvitem{Nov. 2020}{Short text classification performance boost: implemented a topic similarity algorithm from scratch to implement a paper's method for boosting short text topic classification performance without neural networks (team project in Natural Language Processing)}
+\cvitem{April 2020}{BrokerBot: an Internet-enabled Arduino bot player for a board game using AWS and an ESP-8266 chip (individual project in Internet of Things)}
+\cvitem{Nov. 2019}{Container manager: system including containerized memory isolation, process synchronization, and shared memory space for the xv6 OS (team project in Operating Systems)}
+\cvitem{April 2019}{Full-stack webapp: college registration/advising system developed on a LAMP AWS server (team project in Database Systems)}
+\cvitem{April 2019}{Heartrate monitor: data collection/analysis system using Arduino, C, and various sensors (individual project in Systems Programming)}
+\cvitem{Dec. 2018}{``Alien Attack'': an arcade-style video game built with Java's Swing library (individual project in Software Engineering)}
+\cvitem{Dec. 2018}{Text search tool: a document search engine built in C from scratch using the tf-idf algorithm (individual project for Computer Architecture)}
+
+\section{Involvement/Honor Societies}
+\cvlistdoubleitem{Tau Beta Pi Honor Society}{GW Robotics}
+\cvlistdoubleitem{GW Undergraduate Review}{GW ACM}
+
+\end{document}
