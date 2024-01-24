@@ -2,7 +2,7 @@
 title: "Publications"
 published: true
 subhead: "Rick's academic work"
-date: 2023-01-25
+date: 2024-01-23
 permalink: "publications"
 ---
 
@@ -11,6 +11,7 @@ Rick currently works on research with <a href="https://en.wikipedia.org/wiki/Nei
 <a href="https://orcid.org/0000-0002-1871-7478" target="_blank">Find his work on ORCID</a>.
 
 He is co-author on the following papers (all links are DOIs):
+- <a href="https://doi.org/10.1093/pnasnexus/pgae004" target="_blank">Controlling bad-actor-artificial intelligence activity at scale across online battlefields</a>, 1/23/24
 - <a href="https://doi.org/10.1371/journal.pone.0278511" target="_blank">Offline Events and Online Hate</a>, 1/25/23
 - <a href="https://doi.org/10.1007/978-3-031-10464-0_38" target="_blank">Dynamic Topic Modeling Reveals Variations in Online Hate Narratives</a>, 7/7/22
 - <a href="https://doi.org/10.3389/fpos.2022.885362" target="_blank">Connectivity Between Russian Information Sources and Extremist Communities Across Social Media Platforms</a>, 6/22/22
