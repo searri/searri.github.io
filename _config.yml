@@ -7,7 +7,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Rick's Site"
+title                    : "Rick's Creative Website Name"
 title_separator          : "-"
 name                     : &name "Rick Sear"
 description              : 
@@ -19,15 +19,8 @@ repository               : "searri/searri.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  # Biographic information (many fields are pulled directly from GitHub)
   pronouns         : "he/him"
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Washington, DC"
-  employer         : "The George Washington University"
-  uri              : # URL
-  email            : # email address
 
   # Academic websites
   academia         : # URL
@@ -60,7 +53,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : richard-sear
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
