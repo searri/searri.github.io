@@ -181,6 +181,8 @@ exclude:
   - README
   - tmp
   - vendor
+  - out
+
 keep_files:
   - .git
   - .svn
