@@ -2,7 +2,7 @@
 title: "Class Projects"
 published: true
 subhead: "What has Rick worked on in class?"
-date: 2021-09-13
+date: 2024-02-09
 permalink: projects
 ---
 
@@ -16,7 +16,7 @@ But here are some of the things I've done over the years:
 - Built a full-stack AWS LAMP webapp for managing students and grades (team project)
 - Implemented multithreading in the xv6 operating system
 - Implemented process synchronization in the xv6 OS (using various types of locks)
-- Created BrokerBot, an IoT device using Arduino and AWS (watch the video below)
+- Created BrokerBot, an IoT device using Arduino and AWS (watch the video below, or <a href="https://github.com/searri/BrokerBot" target="_blank">check out my current updates to it here</a>)
 - Implemented a non-neural NLP method for improving short-text topic classification tasks and replicated results (team project)
 - Built a website for APSC 1001, a class he was Learning Assistant for: <a href="https://gwu-apsc1001.github.io/apsc1001-fall2020/" target="_blank">explore the archived website here</a>
 - Built an Android app which uses object detection and depth mapping to act as a digital seeing eye dog (team project): <a href="https://searri.github.io/project-dog/" target="_blank">explore the website here</a>
