@@ -1,26 +1,13 @@
 # Personal Website
 
-This repo contains the nuts and bolts of my website. After a major redesign in 2020, this is a [Jekyll website](https://jekyllrb.com/) heavily based on GitHub's [personal website](https://github.com/github/personal-website) template.
+This repo contains the nuts and bolts of my website. It is mostly based on the ["Academic Pages" website theme](https://github.com/academicpages/academicpages.github.io).
 
 ## Installation
 
-If, for some reason, you'd like to fork or run this website locally, you'll need to do the following (taken from the GitHub personal-website repository's README):
+1. `sudo apt install ruby-dev ruby-bundler nodejs`
 
-1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/)
-2. Install Jekyll and [bundler](https://jekyllrb.com/docs/ruby-101/#bundler) [gems](https://jekyllrb.com/docs/ruby-101/#gems)
-```
-gem install jekyll bundler
-```
-3. Install missing gems
-```
-bundle install
-```
-4. Build the site and make it available on a local server
-```
-bundle exec jekyll serve
-```
-5. Now browse to [http://localhost:4000](http://localhost:4000)
+2. `bundle install`
 
-You'll need to kill the Ruby process and re-run step 4 when you make changes to `_config.yml`, but otherwise you can make changes to the displayed webpages and they will be updated.
+3. `jekyll serve -l -H localhost`
 
-Check out the [original repository's README](https://github.com/github/personal-website/blob/master/README.md) for more information.
+4. [http://localhost:4000](http://localhost:4000)
