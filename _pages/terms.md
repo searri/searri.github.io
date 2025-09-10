@@ -28,6 +28,6 @@ Third-party advertisers from other sites may place and read cookies on your brow
 
 If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
 
-#### Google Analytics
+### Google Analytics
 
 Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](https://policies.google.com/technologies/partner-sites). To request deletion of your data, fill out [this Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfADJgh9g24tM6Tevidrydxlns7PZMoSDNWeF40H2rmiR9GsA/viewform?usp=dialog).
