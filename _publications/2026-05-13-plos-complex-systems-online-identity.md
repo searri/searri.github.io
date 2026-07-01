@@ -1,0 +1,11 @@
+---
+title: "Online identity and action discourse around the 2020 and 2024 U.S. presidential elections"
+collection: publications
+category: manuscripts
+permalink: /publications/2026-05-13-plos-complex-systems-online-identity
+date: 2026-05-13
+venue: 'PLOS Complex Systems'
+paperurl: 'https://doi.org/10.1371/journal.pcsy.0000107'
+---
+
+Social psychology theories of collective action argue that shared social identity mediates coordinated behavior through interacting collective mental states, such as the perception of a common grievance, the corresponding corrective action norms, and the associated efficacy beliefs. Large-scale social media data make it possible to test these theories quantitatively, but operationalizing them in online settings remains challenging. We propose an operationalization that maps the theoretical mental states onto discourse and evaluates their temporal interdependence using trend analysis, stationarity tests, vector autoregression, and pathway analysis. We apply this framework to the communal discussion of alleged voter fraud in the ∼90 million social media posts around the 2020 and 2024 U.S. presidential elections. In 2020/2021, we observe a canonical interaction sequence that the theories suggest: grievance about the alleged electoral fraud predicts subsequent mutual validation, validation predicts shared identity, and identity predicts efficacy beliefs and action discourse. Overall, the results are consistent with a collective psychological alignment that strengthens in the runup to January 6, 2021. Conversely, the 2024/2025 results do not reliably support either the alignment or the canonical sequence. Instead, the relationships are often negative or weak: grievance can suppress efficacy, action can reduce grievance, and identity predicts validation without consistently predicting action. These contrasts show that the coupling among grievance, validation, identity, efficacy, and action in digital conversation is context-dependent rather than universal. By operationalizing psychological theories in online discourse, the study both confirms specific theoretical mechanisms behind collective action in one electoral context and identifies the conditions under which the mobilizing alignment fragments in another.
